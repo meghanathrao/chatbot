@@ -2,7 +2,6 @@ import streamlit as st
 import random
 
 
-
 st.set_page_config(page_title="Chat Application", layout="wide")
 
 if "show_sidebar" not in st.session_state:
@@ -53,53 +52,49 @@ st.markdown("""
     
     
     /* Message styling */
-    .user-message {
-        padding: 1rem;
-        margin: 0.5rem 0;
-        background-color: #F3F4F6;
-        border-radius: 8px;
-        color: #111827;
-        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
-        line-height: 1.5;
-    }
-    
-    .bot-message {
-        padding: 1rem;
-        margin: 0.5rem 0;
-        background-color: #F9FAFB;
-        border: 1px solid #E5E7EB;
-        border-radius: 8px;
-        color: #111827;
-        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
-        line-height: 1.5;
-    }
-    /* Message input container */
-    .input-container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: white;
-    }
-        
-    /* Title styling */
-    h1 {
-        font-size: 1.875rem;
-        font-weight: 600;
-        color: #111827;
-        margin-bottom: 1rem;
-    }
-    
-    /* Message headers */
-    .message-header {
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-        color: #4B5563;
-    }
+.user-message {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #F3F4F6;
+    border-radius: 8px;
+    color: #111827;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+    line-height: 1.5;
+}
 
-    /* Input field styling */
-    .stTextInput > div > div > input {
-        color: white !important;
-    }
+.bot-message {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    color: #111827;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+    line-height: 1.5;
+}
+
+/* Message input container */
+.input-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+    
+/* Title styling */
+h1 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+/* Message headers */
+.message-header {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #4B5563;
+}
     </style>
 """, unsafe_allow_html=True)
 
